@@ -93,7 +93,7 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
-/* 📦 Product Section */
+/* 🛍️ Product Section */
 .product-section {
   display: flex;
   flex-wrap: wrap;
@@ -107,6 +107,10 @@ nav ul li a:hover {
   padding: 15px;
   border-radius: 8px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: translateY(-5px);
 }
 .product-card img {
   width: 100%;
@@ -122,6 +126,25 @@ nav ul li a:hover {
 .product-card p {
   font-size: 14px;
   color: #555;
+  margin-bottom: 10px;
+}
+.price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #006699;
+  margin-bottom: 10px;
+}
+.order-btn {
+  padding: 8px 14px;
+  background-color: #ff9800;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.order-btn:hover {
+  background-color: #e68a00;
 }
 
 /* 📬 Contact Form */
@@ -214,7 +237,34 @@ nav ul li a:hover {
   border-radius: 6px;
 }
 
-/* 📱 WhatsApp Floating Button */
+/* 📰 Gadget News */
+.gadget-news {
+  margin: 20px;
+  padding: 20px;
+  background: #fff8e1;
+  border-left: 5px solid #ff9800;
+  border-radius: 8px;
+}
+.gadget-news h2 {
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+.gadget-news ul {
+  list-style: none;
+  padding: 0;
+}
+.gadget-news ul li {
+  margin-bottom: 10px;
+}
+.gadget-news ul li a {
+  color: #006699;
+  text-decoration: none;
+}
+.gadget-news ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 🟢 WhatsApp Floating Button */
 .whatsapp-float {
   position: fixed;
   bottom: 25px;
@@ -237,6 +287,15 @@ nav ul li a:hover {
   background: #1ebc59;
 }
 
+/* 🧭 Footer */
+footer {
+  text-align: center;
+  background: #006699;
+  color: white;
+  padding: 15px;
+  font-size: 14px;
+}
+
 /* 🔄 Layout Overrides */
 body.force-desktop nav ul li {
   display: inline-block !important;
@@ -251,7 +310,7 @@ body.force-mobile nav ul li {
   .product-card {
     width: 90%;
   }
-  .contact-form, .newsletter, .search {
+  .contact-form, .newsletter, .search, .gadget-news {
     margin: 10px;
     padding: 15px;
   }

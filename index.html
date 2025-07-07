@@ -22,12 +22,11 @@
     <button onclick="switchLayout('auto')">🌐 Auto</button>
   </div>
 
-  <!-- 🇬🇧 English Content -->
+  <!-- 🇬🇧 English Section -->
   <div class="content lang-en lang-visible">
     <div class="logo-section"><img src="logo.png" class="logo" /></div>
     <div class="banner"><img src="banner.png" /></div>
     <header><h1>PakTronics</h1><p class="urdu">With dignity, for everyone</p></header>
-
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -36,7 +35,6 @@
         <li><a href="#">About</a></li>
       </ul>
     </nav>
-
     <main>
       <section class="intro">
         <h2>Welcome</h2>
@@ -61,12 +59,24 @@
           <img src="charger.jpg" />
           <h3>Smart Charger</h3>
           <p>Fast & safe charging solution.</p>
+          <p class="price">Price: Rs. 1,200</p>
+          <button class="order-btn">Order Now</button>
         </div>
         <div class="product-card">
           <img src="headset.jpg" />
           <h3>Wireless Headset</h3>
           <p>Crystal clear sound experience.</p>
+          <p class="price">Price: Rs. 3,200</p>
+          <button class="order-btn">Order Now</button>
         </div>
+      </section>
+
+      <section class="gadget-news">
+        <h2>📰 Gadget News</h2>
+        <ul>
+          <li><a href="https://www.techradar.com/news/latest-smartphone-launch">Latest Smartphone Launch</a></li>
+          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/">Charging Tech Breakthrough</a></li>
+        </ul>
       </section>
 
       <section class="contact-form">
@@ -82,18 +92,14 @@
         </form>
       </section>
     </main>
-
-    <footer>
-      <p>© 2025 PakTronics — Powered by دعائیں</p>
-    </footer>
+    <footer><p>© 2025 PakTronics</p></footer>
   </div>
 
-  <!-- 🇵🇰 Urdu Content -->
+  <!-- 🇵🇰 Urdu Section -->
   <div class="content lang-ur">
     <div class="logo-section"><img src="logo.png" class="logo" /></div>
     <div class="banner"><img src="banner.png" /></div>
     <header><h1>پاک ٹرونکس</h1><p class="urdu">وقار کے ساتھ، سب کے لیے</p></header>
-
     <nav>
       <ul>
         <li><a href="#">صفحہ اول</a></li>
@@ -102,7 +108,6 @@
         <li><a href="#">ہمارے بارے میں</a></li>
       </ul>
     </nav>
-
     <main>
       <section class="intro">
         <h2>خوش آمدید</h2>
@@ -127,12 +132,24 @@
           <img src="charger.jpg" />
           <h3>اسمارٹ چارجر</h3>
           <p>تیز اور محفوظ چارجنگ حل۔</p>
+          <p class="price">قیمت: Rs. 1,200</p>
+          <button class="order-btn">آرڈر کریں</button>
         </div>
         <div class="product-card">
           <img src="headset.jpg" />
           <h3>وائرلیس ہیڈسیٹ</h3>
           <p>واضح آواز کا تجربہ۔</p>
+          <p class="price">قیمت: Rs. 3,200</p>
+          <button class="order-btn">آرڈر کریں</button>
         </div>
+      </section>
+
+      <section class="gadget-news">
+        <h2>📰 گیجٹس کی خبریں</h2>
+        <ul>
+          <li><a href="https://www.techradar.com/news/latest-smartphone-launch">نیا اسمارٹ فون لانچ</a></li>
+          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/">چارجنگ ٹیکنالوجی میں انقلاب</a></li>
+        </ul>
       </section>
 
       <section class="contact-form">
@@ -148,10 +165,7 @@
         </form>
       </section>
     </main>
-
-    <footer>
-      <p>© 2025 پاک ٹرونکس — دعاؤں سے روشن</p>
-    </footer>
+    <footer><p>© 2025 پاک ٹرونکس</p></footer>
   </div>
 
   <!-- 🟢 WhatsApp Button -->
@@ -175,19 +189,4 @@
       setLanguage('en');
       document.getElementById('product-search')?.addEventListener('keyup', function () {
         const query = this.value.toLowerCase();
-        document.querySelectorAll('#product-list .product-card').forEach(card => {
-          card.style.display = card.innerText.toLowerCase().includes(query) ? 'block' : 'none';
-        });
-      });
-
-      document.getElementById('search-ur')?.addEventListener('keyup', function () {
-        const query = this.value.toLowerCase();
-        document.querySelectorAll('#urdu-products .product-card').forEach(card => {
-          card.style.display = card.innerText.toLowerCase().includes(query) ? 'block' : 'none';
-        });
-      });
-    };
-  </script>
-
-</body>
-</html>
+        document.querySelectorAll('#product-list .product-card').forEach
