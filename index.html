@@ -17,19 +17,17 @@
 
   <!-- 🔄 Layout Toggle -->
   <div class="layout-toggle">
-    <button onclick="switchLayout('desktop')">💻 View Desktop</button>
-    <button onclick="switchLayout('mobile')">📱 View Mobile</button>
+    <button onclick="switchLayout('desktop')">💻 Desktop</button>
+    <button onclick="switchLayout('mobile')">📱 Mobile</button>
     <button onclick="switchLayout('auto')">🌐 Auto</button>
   </div>
 
-  <!-- 🇬🇧 English Section -->
+  <!-- 🇬🇧 English Content -->
   <div class="content lang-en lang-visible">
     <div class="logo-section"><img src="logo.png" class="logo" /></div>
     <div class="banner"><img src="banner.png" /></div>
-    <header>
-      <h1>PakTronics</h1>
-      <p class="urdu">With dignity, for everyone</p>
-    </header>
+    <header><h1>PakTronics</h1><p class="urdu">With dignity, for everyone</p></header>
+
     <nav>
       <ul>
         <li><a href="#">Home</a></li>
@@ -38,11 +36,39 @@
         <li><a href="#">About</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="intro">
         <h2>Welcome</h2>
         <p>Where technology meets trust.</p>
       </section>
+
+      <section class="newsletter">
+        <h2>💌 Subscribe for Updates</h2>
+        <form>
+          <input type="email" placeholder="Enter your email" required />
+          <button type="submit">Subscribe</button>
+        </form>
+      </section>
+
+      <section class="search">
+        <h2>🔍 Search Products</h2>
+        <input type="text" id="product-search" placeholder="Search..." />
+      </section>
+
+      <section class="product-section" id="product-list">
+        <div class="product-card">
+          <img src="charger.jpg" />
+          <h3>Smart Charger</h3>
+          <p>Fast & safe charging solution.</p>
+        </div>
+        <div class="product-card">
+          <img src="headset.jpg" />
+          <h3>Wireless Headset</h3>
+          <p>Crystal clear sound experience.</p>
+        </div>
+      </section>
+
       <section class="contact-form">
         <h2>📬 Contact Us</h2>
         <form>
@@ -56,17 +82,18 @@
         </form>
       </section>
     </main>
-    <footer><p>© 2025 PakTronics</p></footer>
+
+    <footer>
+      <p>© 2025 PakTronics — Powered by دعائیں</p>
+    </footer>
   </div>
 
-  <!-- 🇵🇰 Urdu Section -->
+  <!-- 🇵🇰 Urdu Content -->
   <div class="content lang-ur">
     <div class="logo-section"><img src="logo.png" class="logo" /></div>
     <div class="banner"><img src="banner.png" /></div>
-    <header>
-      <h1>پاک ٹرونکس</h1>
-      <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
-    </header>
+    <header><h1>پاک ٹرونکس</h1><p class="urdu">وقار کے ساتھ، سب کے لیے</p></header>
+
     <nav>
       <ul>
         <li><a href="#">صفحہ اول</a></li>
@@ -75,11 +102,39 @@
         <li><a href="#">ہمارے بارے میں</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="intro">
         <h2>خوش آمدید</h2>
         <p>جہاں ٹیکنالوجی، اعتماد اور وقار سے جڑتی ہے۔</p>
       </section>
+
+      <section class="newsletter">
+        <h2>💌 تازہ اپڈیٹس کے لیے سبسکرائب کریں</h2>
+        <form>
+          <input type="email" placeholder="اپنا ای میل درج کریں" required />
+          <button type="submit">سبسکرائب کریں</button>
+        </form>
+      </section>
+
+      <section class="search">
+        <h2>🔍 مصنوعات تلاش کریں</h2>
+        <input type="text" id="search-ur" placeholder="تلاش کریں..." />
+      </section>
+
+      <section class="product-section" id="urdu-products">
+        <div class="product-card">
+          <img src="charger.jpg" />
+          <h3>اسمارٹ چارجر</h3>
+          <p>تیز اور محفوظ چارجنگ حل۔</p>
+        </div>
+        <div class="product-card">
+          <img src="headset.jpg" />
+          <h3>وائرلیس ہیڈسیٹ</h3>
+          <p>واضح آواز کا تجربہ۔</p>
+        </div>
+      </section>
+
       <section class="contact-form">
         <h2>📬 رابطہ کریں</h2>
         <form>
@@ -93,7 +148,10 @@
         </form>
       </section>
     </main>
-    <footer><p>© 2025 پاک ٹرونکس</p></footer>
+
+    <footer>
+      <p>© 2025 پاک ٹرونکس — دعاؤں سے روشن</p>
+    </footer>
   </div>
 
   <!-- 🟢 WhatsApp Button -->
@@ -112,7 +170,23 @@
       if (mode === 'desktop') document.body.classList.add('force-desktop');
       else if (mode === 'mobile') document.body.classList.add('force-mobile');
     }
-    window.onload = () => setLanguage('en');
+
+    window.onload = () => {
+      setLanguage('en');
+      document.getElementById('product-search')?.addEventListener('keyup', function () {
+        const query = this.value.toLowerCase();
+        document.querySelectorAll('#product-list .product-card').forEach(card => {
+          card.style.display = card.innerText.toLowerCase().includes(query) ? 'block' : 'none';
+        });
+      });
+
+      document.getElementById('search-ur')?.addEventListener('keyup', function () {
+        const query = this.value.toLowerCase();
+        document.querySelectorAll('#urdu-products .product-card').forEach(card => {
+          card.style.display = card.innerText.toLowerCase().includes(query) ? 'block' : 'none';
+        });
+      });
+    };
   </script>
 
 </body>
