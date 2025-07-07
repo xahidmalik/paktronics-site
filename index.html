@@ -193,3 +193,29 @@
       document.querySelectorAll('.content').forEach(el => {
         el.class
 
+<script>
+  function setLanguage(lang) {
+    document.querySelectorAll('.content').forEach(el => {
+      el.classList.remove('lang-visible');
+    });
+    document.querySelectorAll('.lang-' + lang).forEach(el => {
+      el.classList.add('lang-visible');
+    });
+  }
+
+  function switchLayout(mode) {
+    document.body.classList.remove('force-desktop', 'force-mobile');
+    if (mode === 'desktop') {
+      document.body.classList.add('force-desktop');
+    } else if (mode === 'mobile') {
+      document.body.classList.add('force-mobile');
+    }
+    // اگر mode "auto" ہے تو دونوں class ہٹا دی گئی ہیں
+  }
+
+  // Default: انگریزی زبان دکھائیں
+  window.onload = () => setLanguage('en');
+</script>
+</body>
+</html>
+
