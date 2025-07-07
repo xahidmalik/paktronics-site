@@ -1,17 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PakTronics — وقار کے ساتھ، سب کے لیے</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.content').forEach(el => {
+        el.classList.remove('lang-visible');
+      });
+      document.querySelectorAll('.lang-' + lang).forEach(el => {
+        el.classList.add('lang-visible');
+      });
+    }
+    window.onload = () => setLanguage('en');
+  </script>
 </head>
 <body>
+  <!-- 🔘 Language Toggle -->
+  <div class="language-toggle">
+    <button onclick="setLanguage('en')">English</button>
+    <button onclick="setLanguage('ur')">اردو</button>
+  </div>
+
+  <!-- 🌐 Language Blocks -->
+  <div class="content lang-en lang-visible">
+    <h1>Welcome to PakTronics</h1>
+    <p>Your trusted source for smart tech in Pakistan.</p>
+  </div>
+
+  <div class="content lang-ur">
+    <h1>پاک ٹرونکس میں خوش آمدید</h1>
+    <p>پاکستان میں جدید ٹیکنالوجی کا قابلِ اعتماد ذریعہ</p>
+  </div>
+
+  <!-- 🖼️ Logo -->
+  <div class="logo-section">
+    <img src="logo.png" alt="PakTronics Logo" class="logo" />
+  </div>
+
+  <!-- 📷 Banner -->
+  <div class="banner">
+    <img src="banner.png" alt="PakTronics Banner" />
+  </div>
+
+  <!-- 📢 Site Header -->
   <header>
     <h1>PakTronics</h1>
     <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
   </header>
 
+  <!-- 🔗 Navigation -->
   <nav>
     <ul>
       <li><a href="#">Home</a></li>
@@ -21,6 +61,7 @@
     </ul>
   </nav>
 
+  <!-- 📄 Main Content -->
   <main>
     <section class="intro">
       <h2>Welcome to PakTronics</h2>
@@ -38,8 +79,10 @@
     </section>
   </main>
 
+  <!-- 📌 Footer -->
   <footer>
     <p>© 2025 PakTronics — Powered by دعائیں, Designed for ہر دل</p>
   </footer>
 </body>
 </html>
+
