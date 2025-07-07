@@ -1,67 +1,93 @@
-/* 🌐 Base Reset */
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f5f5f5;
+  background: #f5f5f5;
   color: #333;
 }
-
-/* 🔘 Language Toggle */
-.language-toggle {
+.language-toggle, .layout-toggle {
   text-align: center;
-  margin: 20px 0 0;
+  margin: 15px 0;
 }
-.language-toggle button {
+.language-toggle button, .layout-toggle button {
   padding: 10px 18px;
   margin: 5px 8px;
-  font-size: 16px;
+  font-size: 15px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
   background-color: #006699;
   color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-.language-toggle button:hover {
-  background-color: #004d66;
-}
-
-/* 🔄 Layout Toggle */
-.layout-toggle {
-  text-align: center;
-  margin: 10px 0 20px;
 }
 .layout-toggle button {
-  padding: 8px 16px;
-  margin: 0 5px;
   background-color: #555;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
 }
 .layout-toggle button:hover {
   background-color: #333;
 }
+.lang-en, .lang-ur { display: none; }
+.lang-visible { display: block; }
+.lang-ur { direction: rtl; text-align: right; }
+.logo { width: 180px; margin: 20px auto; display: block; }
+.banner { width: 100%; max-height: 350px; overflow: hidden; }
+.banner img { width: 100%; display: block; }
+header {
+  background: #006699; color: white;
+  padding: 20px; text-align: center;
+}
+header h1 { margin: 0; font-size: 2.5em; }
+header .urdu { font-size: 1.2em; font-style: italic; margin-top: 5px; }
+nav { background: #eee; padding: 10px; text-align: center; }
+nav ul { list-style: none; padding: 0; margin: 0; }
+nav ul li { display: inline-block; margin: 0 15px; }
+nav ul li a { color: #006699; text-decoration: none; font-weight: bold; }
+nav ul li a:hover { text-decoration: underline; }
+.intro, .contact-form {
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+}
+.contact-form h2 { color: #006699; margin-bottom: 15px; }
+.contact-form form { display: flex; flex-direction: column; }
+.contact-form label { margin: 8px 0 4px; font-weight: bold; }
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact-form button {
+  padding: 10px 16px;
+  background-color: #006699;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #004d66;
+}
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #006699;
+  color: white;
+  font-size: 14px;
+}
 
-/* 🌍 Language Sections */
-.lang-en, .lang-ur {
-  display: none;
+/* Layout override */
+body.force-desktop nav ul li {
+  display: inline-block !important;
+  margin: 0 15px !important;
 }
-.lang-visible {
-  display: block;
-}
-.lang-ur {
-  direction: rtl;
-  text-align: right;
+body.force-mobile nav ul li {
+  display: block !important;
+  margin: 10px 0 !important;
 }
 
-/* 🖼️ Branding */
-.logo {
-  width: 180px;
-  margin: 20px auto;
-  display: block;
-}
-.banner {
-  width: 100%;
+/* Responsive
 
