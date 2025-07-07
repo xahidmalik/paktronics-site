@@ -1,7 +1,6 @@
 body {
-  font-family: 'Segoe UI', sans-serif;
+  font-family: sans-serif;
   margin: 0;
-  padding: 0;
   background: #f5f5f5;
   color: #333;
 }
@@ -9,85 +8,106 @@ body {
   text-align: center;
   margin: 15px 0;
 }
-.language-toggle button, .layout-toggle button {
+button {
   padding: 10px 18px;
   margin: 5px 8px;
   font-size: 15px;
   border: none;
   border-radius: 6px;
-  cursor: pointer;
-  background-color: #006699;
+  background: #006699;
   color: white;
+  cursor: pointer;
 }
 .layout-toggle button {
-  background-color: #555;
-}
-.layout-toggle button:hover {
-  background-color: #333;
+  background: #555;
 }
 .lang-en, .lang-ur { display: none; }
 .lang-visible { display: block; }
 .lang-ur { direction: rtl; text-align: right; }
 .logo { width: 180px; margin: 20px auto; display: block; }
-.banner { width: 100%; max-height: 350px; overflow: hidden; }
-.banner img { width: 100%; display: block; }
-header {
-  background: #006699; color: white;
-  padding: 20px; text-align: center;
-}
-header h1 { margin: 0; font-size: 2.5em; }
-header .urdu { font-size: 1.2em; font-style: italic; margin-top: 5px; }
-nav { background: #eee; padding: 10px; text-align: center; }
-nav ul { list-style: none; padding: 0; margin: 0; }
-nav ul li { display: inline-block; margin: 0 15px; }
-nav ul li a { color: #006699; text-decoration: none; font-weight: bold; }
-nav ul li a:hover { text-decoration: underline; }
+.banner img { width: 100%; }
+header { background: #006699; color: white; text-align: center; padding: 20px; }
+nav { background: #eee; text-align: center; padding: 10px; }
+nav ul { list-style: none; margin: 0; padding: 0; }
+nav li { display: inline-block; margin: 0 10px; }
+nav a { text-decoration: none; color: #006699; font-weight: bold; }
+
 .intro, .contact-form {
   margin: 20px;
   padding: 20px;
-  background: #fff;
+  background: white;
   border-radius: 8px;
-  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
-.contact-form h2 { color: #006699; margin-bottom: 15px; }
+
+.contact-form h2 { color: #006699; }
 .contact-form form { display: flex; flex-direction: column; }
 .contact-form label { margin: 8px 0 4px; font-weight: bold; }
-.contact-form input,
-.contact-form textarea {
+.contact-form input, .contact-form textarea {
   padding: 10px;
-  font-size: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
 .contact-form button {
-  padding: 10px 16px;
-  background-color: #006699;
+  background: #006699;
   color: white;
   border: none;
-  border-radius: 5px;
+  padding: 10px;
+  border-radius: 6px;
   cursor: pointer;
 }
 .contact-form button:hover {
-  background-color: #004d66;
+  background: #004d66;
 }
+
 footer {
   text-align: center;
-  padding: 15px;
   background: #006699;
   color: white;
-  font-size: 14px;
+  padding: 15px;
 }
 
-/* Layout override */
-body.force-desktop nav ul li {
+/* ✅ WhatsApp Floating Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 25px;
+  right: 20px;
+  z-index: 1000;
+  width: 60px;
+  height: 60px;
+  background: #25D366;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+.whatsapp-float img {
+  width: 36px;
+  height: 36px;
+}
+.whatsapp-float:hover {
+  background: #1ebc59;
+}
+
+body.force-desktop nav li {
   display: inline-block !important;
-  margin: 0 15px !important;
 }
-body.force-mobile nav ul li {
+body.force-mobile nav li {
   display: block !important;
-  margin: 10px 0 !important;
+  margin: 10px 0;
 }
 
-/* Responsive
-
+@media (max-width: 768px) {
+  .contact-form, .intro {
+    margin: 10px;
+    padding: 15px;
+  }
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 50px;
+  }
+  .whatsapp-float

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PakTronics — وقار کے ساتھ، سب کے لیے</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="icon" href="favicon.png" />
 </head>
 <body>
 
@@ -22,14 +22,10 @@
     <button onclick="switchLayout('auto')">🌐 Auto</button>
   </div>
 
-  <!-- 🌐 English Content -->
+  <!-- 🇬🇧 English Section -->
   <div class="content lang-en lang-visible">
-    <div class="logo-section">
-      <img src="logo.png" alt="PakTronics Logo" class="logo" />
-    </div>
-    <div class="banner">
-      <img src="banner.png" alt="PakTronics Banner" />
-    </div>
+    <div class="logo-section"><img src="logo.png" class="logo" /></div>
+    <div class="banner"><img src="banner.png" /></div>
     <header>
       <h1>PakTronics</h1>
       <p class="urdu">With dignity, for everyone</p>
@@ -38,79 +34,74 @@
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Products</a></li>
-        <li><a href="#">Gadget News</a></li>
-        <li><a href="#">About Us</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">About</a></li>
       </ul>
     </nav>
     <main>
       <section class="intro">
-        <h2>Welcome to PakTronics</h2>
-        <p>Where technology meets trust, and design meets dignity.</p>
+        <h2>Welcome</h2>
+        <p>Where technology meets trust.</p>
       </section>
-
       <section class="contact-form">
         <h2>📬 Contact Us</h2>
         <form>
-          <label for="name-en">Name:</label>
-          <input type="text" id="name-en" name="name" required />
-          <label for="email-en">Email:</label>
-          <input type="email" id="email-en" name="email" required />
-          <label for="message-en">Message:</label>
-          <textarea id="message-en" name="message" rows="4" required></textarea>
+          <label>Name:</label>
+          <input type="text" required />
+          <label>Email:</label>
+          <input type="email" required />
+          <label>Message:</label>
+          <textarea rows="4" required></textarea>
           <button type="submit">Send Message</button>
         </form>
       </section>
     </main>
-    <footer>
-      <p>© 2025 PakTronics — Powered by دعائیں, Designed for ہر دل</p>
-    </footer>
+    <footer><p>© 2025 PakTronics</p></footer>
   </div>
 
-  <!-- 🇵🇰 Urdu Content -->
+  <!-- 🇵🇰 Urdu Section -->
   <div class="content lang-ur">
-    <div class="logo-section">
-      <img src="logo.png" alt="PakTronics Logo" class="logo" />
-    </div>
-    <div class="banner">
-      <img src="banner.png" alt="PakTronics Banner" />
-    </div>
+    <div class="logo-section"><img src="logo.png" class="logo" /></div>
+    <div class="banner"><img src="banner.png" /></div>
     <header>
       <h1>پاک ٹرونکس</h1>
       <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
     </header>
     <nav>
       <ul>
-        <li><a href="#">صفحۂ اول</a></li>
+        <li><a href="#">صفحہ اول</a></li>
         <li><a href="#">مصنوعات</a></li>
-        <li><a href="#">گیجٹس کی خبریں</a></li>
+        <li><a href="#">خبریں</a></li>
         <li><a href="#">ہمارے بارے میں</a></li>
       </ul>
     </nav>
     <main>
       <section class="intro">
-        <h2>پاک ٹرونکس میں خوش آمدید</h2>
-        <p>جہاں ٹیکنالوجی، اعتماد اور وقار سے جُڑتی ہے۔</p>
+        <h2>خوش آمدید</h2>
+        <p>جہاں ٹیکنالوجی، اعتماد اور وقار سے جڑتی ہے۔</p>
       </section>
-
       <section class="contact-form">
         <h2>📬 رابطہ کریں</h2>
         <form>
-          <label for="name-ur">نام:</label>
-          <input type="text" id="name-ur" name="name" required />
-          <label for="email-ur">ای میل:</label>
-          <input type="email" id="email-ur" name="email" required />
-          <label for="message-ur">پیغام:</label>
-          <textarea id="message-ur" name="message" rows="4" required></textarea>
+          <label>نام:</label>
+          <input type="text" required />
+          <label>ای میل:</label>
+          <input type="email" required />
+          <label>پیغام:</label>
+          <textarea rows="4" required></textarea>
           <button type="submit">پیغام بھیجیں</button>
         </form>
       </section>
     </main>
-    <footer>
-      <p>© 2025 پاک ٹرونکس — دعاؤں سے روشن، ہر دل کے لیے ڈیزائن کردہ</p>
-    </footer>
+    <footer><p>© 2025 پاک ٹرونکس</p></footer>
   </div>
 
-  <!-- 🔧 Functional Scripts -->
+  <!-- 🟢 WhatsApp Button -->
+  <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics"
+     class="whatsapp-float" target="_blank">
+    <img src="whatsapp-icon.png" alt="WhatsApp" />
+  </a>
+
   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
@@ -126,4 +117,3 @@
 
 </body>
 </html>
-
