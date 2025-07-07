@@ -1,92 +1,28 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PakTronics — وقار کے ساتھ، سب کے لیے</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="icon" type="image/png" href="favicon.png" />
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.content').forEach(el => {
-        el.classList.remove('lang-visible');
-      });
-      document.querySelectorAll('.lang-' + lang).forEach(el => {
-        el.classList.add('lang-visible');
-      });
-    }
-    window.onload = () => setLanguage('en');
-  </script>
-</head>
-<body>
-
-  <div class="language-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('ur')">اردو</button>
-  </div>
-
-  <div class="content lang-en lang-visible">
-    <h1>Welcome to PakTronics</h1>
-    <p>Your trusted source for smart tech in Pakistan.</p>
-  </div>
-
-  <div class="content lang-ur">
-    <h1>پاک ٹرونکس میں خوش آمدید</h1>
-    <p>پاکستان میں جدید ٹیکنالوجی کا قابلِ اعتماد ذریعہ</p>
-  </div>
-
-  <div class="logo-section">
-    <img src="logo.png" alt="PakTronics Logo" class="logo" />
-  </div>
-
-  <div class="banner">
-    <img src="banner.png" alt="PakTronics Banner" />
-  </div>
-
-  <header>
-    <h1>PakTronics</h1>
-    <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
-  </header>
-
-  <nav>
+<!-- 🌐 English About Us Section -->
+<div class="content lang-en">
+  <section class="about-us">
+    <h2>Who We Are</h2>
+    <p>At <strong>PakTronics</strong>, our mission is to bring smart, reliable, and dignified technology to every corner of Pakistan.</p>
     <ul>
-      <li><a href="#">Home</a></li>
-      <li><a href="#">Products</a></li>
-      <li><a href="#">Gadget News</a></li>
-      <li><a href="#">About Us</a></li>
+      <li>💡 Trust-driven Electronics</li>
+      <li>🎯 Simplified Smart Solutions</li>
+      <li>🤝 Honest Support for Every Customer</li>
     </ul>
-  </nav>
+    <p>📞 Want to partner with us? <strong>Contact anytime!</strong></p>
+  </section>
+</div>
 
-  <main>
-    <section class="intro">
-      <h2>Welcome to PakTronics</h2>
-      <p>Where technology meets trust, and design meets dignity.</p>
-      <p class="urdu">ہم جدید الیکٹرانکس کو آپ کے اعتماد اور آسانی کے ساتھ جوڑتے ہیں۔</p>
-    </section>
-
-    <section class="features">
-      <h3>Featured Products</h3>
-      <ul>
-        <li>🔌 Fast Chargers</li>
-        <li>📱 Sleek Phone Covers</li>
-        <li>🎧 Bluetooth Headsets</li>
-      </ul>
-    </section>
-
-    <section class="gadget-news">
-      <h3>🌍 Latest in Tech & Gadgets</h3>
-      <ul>
-        <li><a href="https://techcrunch.com/category/gadgets/" target="_blank">TechCrunch: Latest in Smartphones & Wearables</a></li>
-        <li><a href="https://www.gadgets360.com/news" target="_blank">NDTV Gadgets360: Mobile & Tech Trends</a></li>
-        <li><a href="https://www.gizmochina.com/" target="_blank">GizmoChina: Emerging Smart Devices</a></li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 PakTronics — Powered by دعائیں, Designed for ہر دل</p>
-  </footer>
-
-</body>
-</html>
+<!-- 🇵🇰 Urdu About Us Section -->
+<div class="content lang-ur">
+  <section class="about-us">
+    <h2>ہم کون ہیں</h2>
+    <p><strong>پاک ٹرونکس</strong> کا مشن ہے کہ ہر پاکستانی گھر تک جدید، معتبر اور باوقار ٹیکنالوجی پہنچائی جائے۔</p>
+    <ul>
+      <li>💡 اعتماد پر مبنی الیکٹرانکس</li>
+      <li>🎯 سادہ اور سمارٹ حل</li>
+      <li>🤝 ہر گاہک کے لیے ایماندارانہ خدمات</li>
+    </ul>
+    <p>📞 کیا آپ اشتراک چاہتے ہیں؟ <strong>بے جھجک رابطہ کریں!</strong></p>
+  </section>
+</div>
 
