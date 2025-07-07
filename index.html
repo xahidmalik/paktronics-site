@@ -24,17 +24,21 @@
 
   <!-- 🇬🇧 English Section -->
   <div class="content lang-en lang-visible">
-    <div class="logo-section"><img src="logo.png" class="logo" /></div>
-    <div class="banner"><img src="banner.png" /></div>
-    <header><h1>PakTronics</h1><p class="urdu">With dignity, for everyone</p></header>
+    <header>
+      <img src="logo.png" class="logo" />
+      <div class="banner"><img src="banner.png" /></div>
+      <h1>PakTronics</h1>
+      <p class="urdu">With dignity, for everyone</p>
+    </header>
+
     <nav>
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Products</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#product-list">Products</a></li>
+        <li><a href="#news-en">News</a></li>
+        <li><a href="#contact-en">Contact</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="intro">
         <h2>Welcome</h2>
@@ -51,7 +55,7 @@
 
       <section class="search">
         <h2>🔍 Search Products</h2>
-        <input type="text" id="product-search" placeholder="Search..." />
+        <input type="text" id="search-en" placeholder="Search..." />
       </section>
 
       <section class="product-section" id="product-list">
@@ -71,15 +75,15 @@
         </div>
       </section>
 
-      <section class="gadget-news">
+      <section class="gadget-news" id="news-en">
         <h2>📰 Gadget News</h2>
         <ul>
-          <li><a href="https://www.techradar.com/news/latest-smartphone-launch">Latest Smartphone Launch</a></li>
-          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/">Charging Tech Breakthrough</a></li>
+          <li><a href="https://www.techradar.com/news/latest-smartphone-launch" target="_blank">Latest Smartphone Launch</a></li>
+          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/" target="_blank">Charging Tech Breakthrough</a></li>
         </ul>
       </section>
 
-      <section class="contact-form">
+      <section class="contact-form" id="contact-en">
         <h2>📬 Contact Us</h2>
         <form>
           <label>Name:</label>
@@ -97,17 +101,21 @@
 
   <!-- 🇵🇰 Urdu Section -->
   <div class="content lang-ur">
-    <div class="logo-section"><img src="logo.png" class="logo" /></div>
-    <div class="banner"><img src="banner.png" /></div>
-    <header><h1>پاک ٹرونکس</h1><p class="urdu">وقار کے ساتھ، سب کے لیے</p></header>
+    <header>
+      <img src="logo.png" class="logo" />
+      <div class="banner"><img src="banner.png" /></div>
+      <h1>پاک ٹرونکس</h1>
+      <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
+    </header>
+
     <nav>
       <ul>
-        <li><a href="#">صفحہ اول</a></li>
-        <li><a href="#">مصنوعات</a></li>
-        <li><a href="#">خبریں</a></li>
-        <li><a href="#">ہمارے بارے میں</a></li>
+        <li><a href="#urdu-products">مصنوعات</a></li>
+        <li><a href="#news-ur">خبریں</a></li>
+        <li><a href="#contact-ur">رابطہ</a></li>
       </ul>
     </nav>
+
     <main>
       <section class="intro">
         <h2>خوش آمدید</h2>
@@ -144,15 +152,15 @@
         </div>
       </section>
 
-      <section class="gadget-news">
+      <section class="gadget-news" id="news-ur">
         <h2>📰 گیجٹس کی خبریں</h2>
         <ul>
-          <li><a href="https://www.techradar.com/news/latest-smartphone-launch">نیا اسمارٹ فون لانچ</a></li>
-          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/">چارجنگ ٹیکنالوجی میں انقلاب</a></li>
+          <li><a href="https://www.techradar.com/news/latest-smartphone-launch" target="_blank">نیا اسمارٹ فون لانچ</a></li>
+          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/" target="_blank">چارجنگ ٹیکنالوجی میں انقلاب</a></li>
         </ul>
       </section>
 
-      <section class="contact-form">
+      <section class="contact-form" id="contact-ur">
         <h2>📬 رابطہ کریں</h2>
         <form>
           <label>نام:</label>
@@ -169,24 +177,27 @@
   </div>
 
   <!-- 🟢 WhatsApp Button -->
-  <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics"
-     class="whatsapp-float" target="_blank">
+  <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics" class="whatsapp-float" target="_blank">
     <img src="whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
+  <!-- ⚙️ Scripts -->
   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
-      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('lang-visible'));
+      document.querySelector('.lang-' + lang).classList.add('lang-visible');
     }
     function switchLayout(mode) {
       document.body.classList.remove('force-desktop', 'force-mobile');
       if (mode === 'desktop') document.body.classList.add('force-desktop');
       else if (mode === 'mobile') document.body.classList.add('force-mobile');
     }
-
     window.onload = () => {
       setLanguage('en');
-      document.getElementById('product-search')?.addEventListener('keyup', function () {
-        const query = this.value.toLowerCase();
-        document.querySelectorAll('#product-list .product-card').forEach
+      document.getElementById('search-en')?.addEventListener('input', function () {
+        const val = this.value.toLowerCase();
+        document.querySelectorAll('#product-list .product-card').forEach(card => {
+          card.style.display = card.innerText.toLowerCase().includes(val) ? 'block' : 'none';
+        });
+      });
+      document.getElement
