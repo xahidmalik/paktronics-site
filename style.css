@@ -1,3 +1,23 @@
+.language-toggle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.language-toggle button {
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.lang-en, .lang-ur {
+  display: none;
+}
+
+.lang-visible {
+  display: block;
+}
+
 body {
   font-family: 'Segoe UI', sans-serif;
   margin: 0;
@@ -5,6 +25,13 @@ body {
   background-color: #f5f5f5;
   color: #333;
 }
+.logo {
+  width: 180px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
+
 
 header {
   background-color: #006699;
@@ -87,4 +114,21 @@ footer {
   padding: 15px;
   background-color: #006699;
   color: white;
+}
+.logo {
+  width: 180px;
+  height: auto;
+  margin: 10px auto;
+  display: block;
+}
+.banner {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.banner img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
