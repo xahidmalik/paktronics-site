@@ -22,7 +22,7 @@
     <button onclick="switchLayout('auto')">🌐 Auto</button>
   </div>
 
-  <!-- 🇬🇧 English Section -->
+  <!-- 🌐 English Section -->
   <div class="content lang-en lang-visible">
     <header>
       <img src="logo.png" class="logo" />
@@ -176,28 +176,27 @@
     <footer><p>© 2025 پاک ٹرونکس</p></footer>
   </div>
 
-  <!-- 🟢 WhatsApp Button -->
+  <!-- 🟢 WhatsApp Floating Button -->
   <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics" class="whatsapp-float" target="_blank">
     <img src="whatsapp-icon.png" alt="WhatsApp" />
   </a>
 
-  <!-- ⚙️ Scripts -->
+  <!-- ✅ JavaScript -->
   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
-      document.querySelector('.lang-' + lang).classList.add('lang-visible');
+      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('lang-visible'));
     }
+
     function switchLayout(mode) {
       document.body.classList.remove('force-desktop', 'force-mobile');
       if (mode === 'desktop') document.body.classList.add('force-desktop');
       else if (mode === 'mobile') document.body.classList.add('force-mobile');
     }
+
     window.onload = () => {
       setLanguage('en');
       document.getElementById('search-en')?.addEventListener('input', function () {
         const val = this.value.toLowerCase();
         document.querySelectorAll('#product-list .product-card').forEach(card => {
-          card.style.display = card.innerText.toLowerCase().includes(val) ? 'block' : 'none';
-        });
-      });
-      document.getElement
+          card.style.display = card.innerText.toLowerCase().includes(val) ? 'block' : '
