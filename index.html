@@ -3,193 +3,36 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>PakTronics — وقار کے ساتھ، سب کے لیے</title>
+  <title>PakTronics — Harmony in Design</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="favicon.png" />
 </head>
 <body>
 
-  <!-- 🔘 Language Toggle -->
-  <div class="language-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('ur')">اردو</button>
-  </div>
+  <header>
+    <img src="logo.png" class="logo" alt="PakTronics Logo" />
+    <div class="banner">
+      <img src="banner.png" class="banner-img" alt="PakTronics Banner" />
+    </div>
+    <h1>PakTronics</h1>
+    <p class="urdu">Where technology meets trust</p>
+  </header>
 
-  <!-- 🔄 Layout Toggle -->
-  <div class="layout-toggle">
-    <button onclick="switchLayout('desktop')">💻 Desktop</button>
-    <button onclick="switchLayout('mobile')">📱 Mobile</button>
-    <button onclick="switchLayout('auto')">🌐 Auto</button>
-  </div>
+  <main>
+    <section class="product-section">
+      <div class="product-card">
+        <img src="charger.jpg" alt="Smart Charger" />
+        <h3>Smart Charger</h3>
+        <p>Fast & safe charging solution.</p>
+        <p class="price">Price: Rs. 1,200</p>
+        <button class="order-btn">Order Now</button>
+      </div>
+    </section>
+  </main>
 
-  <!-- 🌐 English Section -->
-  <div class="content lang-en lang-visible">
-    <header>
-      <img src="logo.png" class="logo" />
-      <div class="banner"><img src="banner.png" class="banner-img" /></div>
-      <h1>PakTronics</h1>
-      <p class="urdu">With dignity, for everyone</p>
-    </header>
+  <footer>
+    <p>© 2025 PakTronics</p>
+  </footer>
 
-    <nav>
-      <ul>
-        <li><a href="#product-list">Products</a></li>
-        <li><a href="#news-en">News</a></li>
-        <li><a href="#contact-en">Contact</a></li>
-      </ul>
-    </nav>
+</body>
+</html>
 
-    <main>
-      <section class="intro">
-        <h2>Welcome</h2>
-        <p>Where technology meets trust.</p>
-      </section>
-
-      <section class="newsletter">
-        <h2>💌 Subscribe for Updates</h2>
-        <form>
-          <input type="email" placeholder="Enter your email" required />
-          <button type="submit">Subscribe</button>
-        </form>
-      </section>
-
-      <section class="search">
-        <h2>🔍 Search Products</h2>
-        <input type="text" id="search-en" placeholder="Search..." />
-      </section>
-
-      <section class="product-section" id="product-list">
-        <div class="product-card">
-          <img src="charger.jpg" alt="Smart Charger" />
-          <h3>Smart Charger</h3>
-          <p>Fast & safe charging solution.</p>
-          <p class="price">Price: Rs. 1,200</p>
-          <button class="order-btn">Order Now</button>
-        </div>
-        <div class="product-card">
-          <img src="headset.jpg" alt="Wireless Headset" />
-          <h3>Wireless Headset</h3>
-          <p>Crystal clear sound experience.</p>
-          <p class="price">Price: Rs. 3,200</p>
-          <button class="order-btn">Order Now</button>
-        </div>
-      </section>
-
-      <section class="gadget-news" id="news-en">
-        <h2>📰 Gadget News</h2>
-        <ul>
-          <li><a href="https://www.techradar.com/news/latest-smartphone-launch" target="_blank">Latest Smartphone Launch</a></li>
-          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/" target="_blank">Charging Tech Breakthrough</a></li>
-        </ul>
-      </section>
-
-      <section class="contact-form" id="contact-en">
-        <h2>📬 Contact Us</h2>
-        <form>
-          <label>Name:</label>
-          <input type="text" required />
-          <label>Email:</label>
-          <input type="email" required />
-          <label>Message:</label>
-          <textarea rows="4" required></textarea>
-          <button type="submit">Send Message</button>
-        </form>
-      </section>
-    </main>
-    <footer><p>© 2025 PakTronics</p></footer>
-  </div>
-
-  <!-- 🇵🇰 Urdu Section -->
-  <div class="content lang-ur">
-    <header>
-      <img src="logo.png" class="logo" />
-      <div class="banner"><img src="banner.png" class="banner-img" /></div>
-      <h1>پاک ٹرونکس</h1>
-      <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
-    </header>
-
-    <nav>
-      <ul>
-        <li><a href="#urdu-products">مصنوعات</a></li>
-        <li><a href="#news-ur">خبریں</a></li>
-        <li><a href="#contact-ur">رابطہ</a></li>
-      </ul>
-    </nav>
-
-    <main>
-      <section class="intro">
-        <h2>خوش آمدید</h2>
-        <p>جہاں ٹیکنالوجی، اعتماد اور وقار سے جڑتی ہے۔</p>
-      </section>
-
-      <section class="newsletter">
-        <h2>💌 تازہ اپڈیٹس کے لیے سبسکرائب کریں</h2>
-        <form>
-          <input type="email" placeholder="اپنا ای میل درج کریں" required />
-          <button type="submit">سبسکرائب کریں</button>
-        </form>
-      </section>
-
-      <section class="search">
-        <h2>🔍 مصنوعات تلاش کریں</h2>
-        <input type="text" id="search-ur" placeholder="تلاش کریں..." />
-      </section>
-
-      <section class="product-section" id="urdu-products">
-        <div class="product-card">
-          <img src="charger.jpg" alt="اسمارٹ چارجر" />
-          <h3>اسمارٹ چارجر</h3>
-          <p>تیز اور محفوظ چارجنگ حل۔</p>
-          <p class="price">قیمت: Rs. 1,200</p>
-          <button class="order-btn">آرڈر کریں</button>
-        </div>
-        <div class="product-card">
-          <img src="headset.jpg" alt="وائرلیس ہیڈسیٹ" />
-          <h3>وائرلیس ہیڈسیٹ</h3>
-          <p>واضح آواز کا تجربہ۔</p>
-          <p class="price">قیمت: Rs. 3,200</p>
-          <button class="order-btn">آرڈر کریں</button>
-        </div>
-      </section>
-
-      <section class="gadget-news" id="news-ur">
-        <h2>📰 گیجٹس کی خبریں</h2>
-        <ul>
-          <li><a href="https://www.techradar.com/news/latest-smartphone-launch" target="_blank">نیا اسمارٹ فون لانچ</a></li>
-          <li><a href="https://www.cnet.com/tech/charging-tech-breakthrough/" target="_blank">چارجنگ ٹیکنالوجی میں انقلاب</a></li>
-        </ul>
-      </section>
-
-      <section class="contact-form" id="contact-ur">
-        <h2>📬 رابطہ کریں</h2>
-        <form>
-          <label>نام:</label>
-          <input type="text" required />
-          <label>ای میل:</label>
-          <input type="email" required />
-          <label>پیغام:</label>
-          <textarea rows="4" required></textarea>
-          <button type="submit">پیغام بھیجیں</button>
-        </form>
-      </section>
-    </main>
-    <footer><p>© 2025 پاک ٹرونکس</p></footer>
-  </div>
-
-  <!-- 🟢 WhatsApp Button -->
-  <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics" class="whatsapp-float" target="_blank">
-    <img src="whatsapp-icon.png" alt="WhatsApp" />
-  </a>
-
-  <!-- ✅ JavaScript -->
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
-      document.querySelectorAll('.lang-' + lang).forEach(el => el.classList.add('lang-visible'));
-    }
-
-    function switchLayout(mode) {
-      document.body.classList.remove('force-desktop', 'force-mobile');
-      if (mode === 'desktop') document.body.classList.add('force-desktop');
-      else if (mode === 'mobile') document.body.classList.add('force-mobile');
-    }
