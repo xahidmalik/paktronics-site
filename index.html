@@ -26,7 +26,7 @@
   <div class="content lang-en lang-visible">
     <header>
       <img src="logo.png" class="logo" />
-      <div class="banner"><img src="banner.png" /></div>
+      <div class="banner"><img src="banner.png" class="banner-img" /></div>
       <h1>PakTronics</h1>
       <p class="urdu">With dignity, for everyone</p>
     </header>
@@ -60,14 +60,14 @@
 
       <section class="product-section" id="product-list">
         <div class="product-card">
-          <img src="charger.jpg" />
+          <img src="charger.jpg" alt="Smart Charger" />
           <h3>Smart Charger</h3>
           <p>Fast & safe charging solution.</p>
           <p class="price">Price: Rs. 1,200</p>
           <button class="order-btn">Order Now</button>
         </div>
         <div class="product-card">
-          <img src="headset.jpg" />
+          <img src="headset.jpg" alt="Wireless Headset" />
           <h3>Wireless Headset</h3>
           <p>Crystal clear sound experience.</p>
           <p class="price">Price: Rs. 3,200</p>
@@ -103,7 +103,7 @@
   <div class="content lang-ur">
     <header>
       <img src="logo.png" class="logo" />
-      <div class="banner"><img src="banner.png" /></div>
+      <div class="banner"><img src="banner.png" class="banner-img" /></div>
       <h1>پاک ٹرونکس</h1>
       <p class="urdu">وقار کے ساتھ، سب کے لیے</p>
     </header>
@@ -137,14 +137,14 @@
 
       <section class="product-section" id="urdu-products">
         <div class="product-card">
-          <img src="charger.jpg" />
+          <img src="charger.jpg" alt="اسمارٹ چارجر" />
           <h3>اسمارٹ چارجر</h3>
           <p>تیز اور محفوظ چارجنگ حل۔</p>
           <p class="price">قیمت: Rs. 1,200</p>
           <button class="order-btn">آرڈر کریں</button>
         </div>
         <div class="product-card">
-          <img src="headset.jpg" />
+          <img src="headset.jpg" alt="وائرلیس ہیڈسیٹ" />
           <h3>وائرلیس ہیڈسیٹ</h3>
           <p>واضح آواز کا تجربہ۔</p>
           <p class="price">قیمت: Rs. 3,200</p>
@@ -176,7 +176,7 @@
     <footer><p>© 2025 پاک ٹرونکس</p></footer>
   </div>
 
-  <!-- 🟢 WhatsApp Floating Button -->
+  <!-- 🟢 WhatsApp Button -->
   <a href="https://wa.me/923001234567?text=Assalamualaikum%2C%20I%20want%20to%20contact%20PakTronics" class="whatsapp-float" target="_blank">
     <img src="whatsapp-icon.png" alt="WhatsApp" />
   </a>
@@ -193,10 +193,3 @@
       if (mode === 'desktop') document.body.classList.add('force-desktop');
       else if (mode === 'mobile') document.body.classList.add('force-mobile');
     }
-
-    window.onload = () => {
-      setLanguage('en');
-      document.getElementById('search-en')?.addEventListener('input', function () {
-        const val = this.value.toLowerCase();
-        document.querySelectorAll('#product-list .product-card').forEach(card => {
-          card.style.display = card.innerText.toLowerCase().includes(val) ? 'block' : '

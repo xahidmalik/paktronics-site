@@ -28,4 +28,8 @@ body {
 .layout-toggle button {
   background-color: #555;
 }
+.layout-toggle button:hover {
+  background-color: #333;
+}
 
+/
