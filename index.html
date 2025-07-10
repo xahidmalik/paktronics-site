@@ -9,28 +9,25 @@
 </head>
 <body>
 
-  <!-- 🔘 Language Toggle -->
   <div class="language-toggle">
     <button onclick="setLanguage('en')">English</button>
     <button onclick="setLanguage('ur')">اردو</button>
   </div>
 
-  <!-- 🌐 English Section -->
+  <!-- English Section -->
   <div class="content lang-en lang-visible">
     <header>
-      <img src="images/logo.png" class="logo" alt="PakTronics Logo" />
-      <img src="images/banner.png" class="banner-img" alt="PakTronics Banner" />
+      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/banner.png" class="banner-img" alt="Banner" />
       <h1>PakTronics</h1>
-      <p class="urdu">Where technology meets trust</p>
+      <p>Where technology meets trust</p>
     </header>
 
-    <!-- 🔍 Search Section -->
     <section class="search">
       <h2>Search Products</h2>
       <input type="text" placeholder="Search..." />
     </section>
 
-    <!-- 🧩 Category Buttons -->
     <div class="category-buttons">
       <button>Chargers</button>
       <button>Accessories</button>
@@ -38,7 +35,6 @@
       <button>Cases</button>
     </div>
 
-    <!-- 📦 Product Cards -->
     <section class="product-section">
       <div class="product-card">
         <img src="images/charger.jpg" alt="Charger" />
@@ -46,7 +42,7 @@
         <p>Quick Dual Port 3.0A</p>
         <div class="price">Rs 950</div>
         <div class="stock in-stock">In Stock</div>
-        <button class="order-btn" onclick="openOrderForm('Fast Charger')">Order</button>
+        <button class="order-btn">Order</button>
       </div>
 
       <div class="product-card">
@@ -55,7 +51,7 @@
         <p>Wireless Stereo 5.0</p>
         <div class="price">Rs 1850</div>
         <div class="stock out-of-stock">Out of Stock</div>
-        <button class="order-btn" onclick="openOrderForm('Bluetooth Handsfree')">Order</button>
+        <button class="order-btn">Order</button>
       </div>
 
       <div class="product-card">
@@ -64,7 +60,7 @@
         <p>Fitness + Notifications</p>
         <div class="price">Rs 2990</div>
         <div class="stock in-stock">In Stock</div>
-        <button class="order-btn" onclick="openOrderForm('Smart Watch')">Order</button>
+        <button class="order-btn">Order</button>
       </div>
 
       <div class="product-card">
@@ -73,7 +69,7 @@
         <p>10000mAh with LED</p>
         <div class="price">Rs 2250</div>
         <div class="stock in-stock">In Stock</div>
-        <button class="order-btn" onclick="openOrderForm('Power Bank')">Order</button>
+        <button class="order-btn">Order</button>
       </div>
 
       <div class="product-card">
@@ -82,44 +78,38 @@
         <p>Shockproof Design</p>
         <div class="price">Rs 750</div>
         <div class="stock in-stock">In Stock</div>
-        <button class="order-btn" onclick="openOrderForm('Mobile Case')">Order</button>
+        <button class="order-btn">Order</button>
       </div>
     </section>
 
-    <!-- 📬 Contact Form -->
     <section class="contact-form">
       <h2>Contact Us</h2>
       <form>
-        <label for="name">Your Name:</label>
-        <input type="text" id="name" required />
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" required />
-
-        <label for="message">Message:</label>
-        <textarea id="message" rows="4" required></textarea>
-
+        <label>Your Name:</label>
+        <input type="text" required />
+        <label>Email:</label>
+        <input type="email" required />
+        <label>Message:</label>
+        <textarea rows="4" required></textarea>
         <button type="submit">Send Message</button>
       </form>
     </section>
   </div>
 
-  <!-- 🌐 Urdu Section -->
+  <!-- Urdu Section -->
   <div class="content lang-ur">
     <header>
-      <img src="images/logo.png" class="logo" alt="PakTronics Logo" />
-      <img src="images/banner.png" class="banner-img" alt="PakTronics Banner" />
+      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/banner.png" class="banner-img" alt="Banner" />
       <h1>پاکٹرونکس</h1>
-      <p class="urdu">جہاں ٹیکنالوجی اور اعتماد ایک ساتھ چلتے ہیں</p>
+      <p>جہاں ٹیکنالوجی اور اعتماد ایک ساتھ چلتے ہیں</p>
     </header>
 
-    <!-- 🔍 سرچ سیکشن -->
     <section class="search">
       <h2>مصنوعات تلاش کریں</h2>
       <input type="text" placeholder="تلاش کریں..." />
     </section>
 
-    <!-- 🧩 کیٹیگری بٹنز -->
     <div class="category-buttons">
       <button>چارجرز</button>
       <button>ہینڈزفری</button>
@@ -127,7 +117,6 @@
       <button>کیسز</button>
     </div>
 
-    <!-- 📦 پروڈکٹ کارڈز -->
     <section class="product-section">
       <div class="product-card">
         <img src="images/charger.jpg" alt="چارجر" />
@@ -135,7 +124,7 @@
         <p>ڈوئل پورٹ 3.0A</p>
         <div class="price">روپے 950</div>
         <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn" onclick="openOrderForm('چارجر')">آرڈر کریں</button>
+        <button class="order-btn">آرڈر کریں</button>
       </div>
 
       <div class="product-card">
@@ -144,7 +133,7 @@
         <p>بلوٹوتھ 5.0 سٹیریو</p>
         <div class="price">روپے 1850</div>
         <div class="stock out-of-stock">دستیاب نہیں</div>
-        <button class="order-btn" onclick="openOrderForm('ہینڈزفری')">آرڈر کریں</button>
+        <button class="order-btn">آرڈر کریں</button>
       </div>
 
       <div class="product-card">
@@ -153,7 +142,7 @@
         <p>فٹنس اور نوٹیفکیشنز</p>
         <div class="price">روپے 2990</div>
         <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn" onclick="openOrderForm('سمارٹ واچ')">آرڈر کریں</button>
+        <button class="order-btn">آرڈر کریں</button>
       </div>
 
       <div class="product-card">
@@ -162,7 +151,7 @@
         <p>10000mAh ایل ای ڈی کے ساتھ</p>
         <div class="price">روپے 2250</div>
         <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn" onclick="openOrderForm('پاور بینک')">آرڈر کریں</button>
+        <button class="order-btn">آرڈر کریں</button>
       </div>
 
       <div class="product-card">
@@ -171,90 +160,37 @@
         <p>شاک پروف ڈیزائن</p>
         <div class="price">روپے 750</div>
         <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn" onclick="openOrderForm('موبائل کیس')">آرڈر کریں</button>
+        <button class="order-btn">آرڈر کریں</button>
       </div>
     </section>
 
-    <!-- 📬 رابطہ فارم -->
     <section class="contact-form">
       <h2>ہم سے رابطہ کریں</h2>
       <form>
-        <label for="name">نام:</label>
-        <input type="text" id="name" required />
-
-        <label for="email">ای میل:</label>
-        <input type="email" id="email" required />
-
-        <label for="message">پیغام:</label>
-        <textarea id="message" rows="4" required></textarea>
-
+        <label>نام:</label>
+        <input type="text" required />
+        <label>ای میل:</label>
+        <input type="email" required />
+        <label>پیغام:</label>
+        <textarea rows="4" required></textarea>
         <button type="submit">پیغام بھیجیں</button>
       </form>
     </section>
   </div>
 
-  <!-- 🟢 WhatsApp Button -->
+  <!-- WhatsApp Button -->
   <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp" />
+    <img src="images/whatsapp-icon.png" alt="WhatsApp Icon" />
   </a>
 
-  <!-- 💳 Order Modal -->
-  <div id="order-modal" class="modal-overlay">
-    <div class="modal-box">
-      <span class="modal-close" onclick="closeOrderForm()">&times;</span>
-      <h2>آرڈر فارم</h2>
-      <form>
-        <label for="product-name">مصنوعہ:</label>
-        <input type="text" id="product-name" readonly />
-
-        <label for="customer-name">آپ کا نام:</label>
-        <input type="text" id="customer-name" required />
-
-        <label for="customer-email">ای میل:</label>
-        <input type="email" id="customer-email" required />
-
-        <label for="customer-address">پتہ:</label>
-        <textarea id="customer-address" rows="3" required></textarea>
-
-        <label for="payment-method">ادائیگی کا طریقہ:</label>
-        <select id="payment-method" required>
-          <option value="">منتخب کریں</option>
-          <option>نقد وصولی پر</option>
-          <option>بینک ٹرانسفر</option>
-          <option>ایزی پیسہ / جاز کیش</option>
-        </select>
-
-        <button type="submit">آرڈر بھیجیں</button>
-      </form>
-    </div>
-  </div>
-
-  <!-- 🧭 Footer -->
-  <footer>
-    © 2025 PakTronics. All rights reserved.
-  </footer>
-
-  <!-- ⚙️ JavaScript -->
+  <!-- Language Toggle Script -->
   <script>
     function setLanguage(lang) {
       document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
-      document.querySelector('.lang-' + lang)?.classList.add('lang-visible');
+      const section = document.querySelector('.lang-' + lang);
+      if (section) section.classList.add('lang-visible');
     }
-
-    function openOrderForm(productName) {
-      document.getElementById('order-modal').style.display = 'flex';
-      document.getElementById('product-name').value = productName;
-    }
-
-    function closeOrderForm() {
-      document.getElementById('order-modal').style.display = 'none';
-    }
-
-    window.addEventListener('click', function(e) {
-      if (e.target.id === 'order-modal') closeOrderForm();
-    });
   </script>
-
 </body>
 </html>
 
