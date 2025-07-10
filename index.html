@@ -9,188 +9,33 @@
 </head>
 <body>
 
-  <div class="language-toggle">
-    <button onclick="setLanguage('en')">English</button>
-    <button onclick="setLanguage('ur')">اردو</button>
+  <!-- 🔵 Logo & Banner Section -->
+  <div class="header" style="text-align:center; padding:20px;">
+    <img class="logo" src="images/logo.png" alt="PakTronics Logo" />
+    <img class="banner-img" src="images/banner.png" alt="PakTronics Banner" />
+    <h1>Welcome to PakTronics</h1>
+    <p>Your trusted tech partner</p>
   </div>
 
-  <!-- English Section -->
-  <div class="content lang-en lang-visible">
-    <header>
-      <img src="images/logo.png" class="logo" alt="PakTronics Logo" />
-      <img src="images/banner.png" class="banner-img" alt="PakTronics Banner" />
-      <h1>PakTronics</h1>
-      <p>Where technology meets trust</p>
-    </header>
-
-    <section class="search">
-      <h2>Search Products</h2>
-      <input type="text" placeholder="Search..." />
-    </section>
-
-    <div class="category-buttons">
-      <button>Chargers</button>
-      <button>Accessories</button>
-      <button>Wearables</button>
-      <button>Cases</button>
+  <!-- 🟢 Product Section -->
+  <div class="product-section">
+    <div class="product-card">
+      <img src="images/charger.jpg" alt="Fast USB Charger" />
+      <h3>Fast USB Charger</h3>
+      <p>Quick and safe charging experience</p>
+      <p class="price">Rs. 650</p>
+      <p class="stock in-stock">In Stock</p>
+      <button class="order-btn">Order Now</button>
     </div>
-
-    <section class="product-section">
-      <div class="product-card">
-        <img src="images/charger.jpg" alt="Charger" />
-        <h3>Fast Charger</h3>
-        <p>Quick Dual Port 3.0A</p>
-        <div class="price">Rs 950</div>
-        <div class="stock in-stock">In Stock</div>
-        <button class="order-btn">Order</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/bluetooth-handsfree.jpg" alt="Bluetooth Handsfree" />
-        <h3>Bluetooth Handsfree</h3>
-        <p>Wireless Stereo 5.0</p>
-        <div class="price">Rs 1850</div>
-        <div class="stock out-of-stock">Out of Stock</div>
-        <button class="order-btn">Order</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/smart-watch.jpg" alt="Smart Watch" />
-        <h3>Smart Watch</h3>
-        <p>Fitness + Notifications</p>
-        <div class="price">Rs 2990</div>
-        <div class="stock in-stock">In Stock</div>
-        <button class="order-btn">Order</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/power-bank.jpg" alt="Power Bank" />
-        <h3>Power Bank</h3>
-        <p>10000mAh with LED</p>
-        <div class="price">Rs 2250</div>
-        <div class="stock in-stock">In Stock</div>
-        <button class="order-btn">Order</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/mobile-case.jpg" alt="Mobile Case" />
-        <h3>Mobile Case</h3>
-        <p>Shockproof Design</p>
-        <div class="price">Rs 750</div>
-        <div class="stock in-stock">In Stock</div>
-        <button class="order-btn">Order</button>
-      </div>
-    </section>
-
-    <section class="contact-form">
-      <h2>Contact Us</h2>
-      <form>
-        <label>Your Name:</label>
-        <input type="text" required />
-        <label>Email:</label>
-        <input type="email" required />
-        <label>Message:</label>
-        <textarea rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </section>
   </div>
 
-  <!-- Urdu Section -->
-  <div class="content lang-ur">
-    <header>
-      <img src="images/logo.png" class="logo" alt="PakTronics Logo" />
-      <img src="images/banner.png" class="banner-img" alt="PakTronics Banner" />
-      <h1>پاکٹرونکس</h1>
-      <p>جہاں ٹیکنالوجی اور اعتماد ایک ساتھ چلتے ہیں</p>
-    </header>
-
-    <section class="search">
-      <h2>مصنوعات تلاش کریں</h2>
-      <input type="text" placeholder="تلاش کریں..." />
-    </section>
-
-    <div class="category-buttons">
-      <button>چارجرز</button>
-      <button>ہینڈزفری</button>
-      <button>سمارٹ گھڑیاں</button>
-      <button>کیسز</button>
-    </div>
-
-    <section class="product-section">
-      <div class="product-card">
-        <img src="images/charger.jpg" alt="چارجر" />
-        <h3>چارجر</h3>
-        <p>ڈوئل پورٹ 3.0A</p>
-        <div class="price">روپے 950</div>
-        <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn">آرڈر کریں</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/bluetooth-handsfree.jpg" alt="ہینڈزفری" />
-        <h3>ہینڈزفری</h3>
-        <p>بلوٹوتھ 5.0 سٹیریو</p>
-        <div class="price">روپے 1850</div>
-        <div class="stock out-of-stock">دستیاب نہیں</div>
-        <button class="order-btn">آرڈر کریں</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/smart-watch.jpg" alt="سمارٹ واچ" />
-        <h3>سمارٹ واچ</h3>
-        <p>فٹنس اور نوٹیفکیشنز</p>
-        <div class="price">روپے 2990</div>
-        <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn">آرڈر کریں</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/power-bank.jpg" alt="پاور بینک" />
-        <h3>پاور بینک</h3>
-        <p>10000mAh ایل ای ڈی کے ساتھ</p>
-        <div class="price">روپے 2250</div>
-        <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn">آرڈر کریں</button>
-      </div>
-
-      <div class="product-card">
-        <img src="images/mobile-case.jpg" alt="موبائل کیس" />
-        <h3>موبائل کیس</h3>
-        <p>شاک پروف ڈیزائن</p>
-        <div class="price">روپے 750</div>
-        <div class="stock in-stock">دستیاب</div>
-        <button class="order-btn">آرڈر کریں</button>
-      </div>
-    </section>
-
-    <section class="contact-form">
-      <h2>ہم سے رابطہ کریں</h2>
-      <form>
-        <label>نام:</label>
-        <input type="text" required />
-        <label>ای میل:</label>
-        <input type="email" required />
-        <label>پیغام:</label>
-        <textarea rows="4" required></textarea>
-        <button type="submit">پیغام بھیجیں</button>
-      </form>
-    </section>
+  <!-- 🟣 WhatsApp Floating Icon -->
+  <div class="whatsapp-float">
+    <a href="https://wa.me/923001234567" target="_blank">
+      <img src="images/whatsapp.png" alt="WhatsApp Chat" />
+    </a>
   </div>
 
-  <!-- WhatsApp Button -->
-  <a href="https://wa.me/923001234567" class="whatsapp-float" target="_blank">
-    <img src="images/whatsapp-icon.png" alt="WhatsApp Icon" />
-  </a>
-
-  <!-- Language Toggle Script -->
-  <script>
-    function setLanguage(lang) {
-      document.querySelectorAll('.content').forEach(el => el.classList.remove('lang-visible'));
-      const section = document.querySelector('.lang-' + lang);
-      if (section) section.classList.add('lang-visible');
-    }
-  </script>
 </body>
 </html>
 
