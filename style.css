@@ -1,0 +1,229 @@
+/* 🌐 Base Styling */
+body {
+  font-family: Arial, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🧭 Language Toggle */
+.language-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+.language-toggle button {
+  margin: 0 10px;
+  padding: 10px 20px;
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.language-toggle button:hover {
+  background: #0056b3;
+}
+
+/* 🌍 Section Visibility */
+.content {
+  display: none;
+  padding: 20px;
+}
+.lang-visible {
+  display: block;
+}
+
+/* 🖼️ Header */
+.logo {
+  width: 80px;
+  margin-bottom: 10px;
+}
+.banner-img {
+  width: 100%;
+  height: auto;
+  max-height: 220px;
+  object-fit: scale-down;
+}
+h1 {
+  text-align: center;
+  font-size: 2em;
+  color: #333;
+}
+p {
+  text-align: center;
+  color: #555;
+}
+
+/* 🔍 Search Section */
+.search {
+  text-align: center;
+  margin: 30px 0;
+}
+.search input {
+  width: 250px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* 🧩 Category Buttons */
+.category-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.category-buttons button {
+  margin: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.category-buttons button:hover {
+  background: #ddd;
+}
+
+/* 📦 Product Section */
+.product-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 220px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.product-card:hover {
+  transform: scale(1.02);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  max-height: 150px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.product-card h3 {
+  font-size: 1.1em;
+  margin: 8px 0;
+  color: #333;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.price {
+  color: #007BFF;
+  font-weight: bold;
+  margin: 6px 0;
+}
+
+.stock {
+  margin: 4px 0;
+}
+
+.stock.in-stock {
+  color: green;
+}
+
+.stock.out-of-stock {
+  color: red;
+}
+
+.order-btn {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.order-btn:hover {
+  background-color: #218838;
+}
+
+/* 📬 Contact Form */
+.contact-form {
+  max-width: 500px;
+  margin: 50px auto;
+}
+.contact-form label {
+  display: block;
+  margin-top: 15px;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.contact-form button:hover {
+  background-color: #0056b3;
+}
+
+/* 🟢 WhatsApp Float */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+}
+.whatsapp-float img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* 🕌 Urdu Section Styling */
+.lang-ur {
+  direction: rtl;
+  text-align: right;
+  font-family: 'Noto Nastaliq Urdu', serif;
+}
+.lang-ur h1, .lang-ur h2, .lang-ur p, .lang-ur label {
+  font-size: 1.1em;
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 600px) {
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+  }
+  .product-card {
+    width: 90%;
+  }
+  .search input {
+    width: 90%;
+  }
+}
+
